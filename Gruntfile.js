@@ -1,4 +1,4 @@
-// Generated on 2017-04-10 using generator-angular 0.15.1
+// Generated on 2016-08-23 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -8,6 +8,8 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+
+  var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -75,6 +77,25 @@ module.exports = function (grunt) {
         hostname: 'localhost',
         livereload: 35729
       },
+      // server: {
+      //  options: {
+      //    middleware: function (connect, options) {
+      //      return [proxySnippet];
+      //    }
+      //  },
+      //  proxies: [
+      //    {
+      //      context: '/api/',
+      //      host: 'http://0.0.0.0',
+      //      https: false,
+      //      port: 3010,
+      //      // rewrite: {
+      //      //   '^/api': ''
+      //      // },
+      //      ws: true
+      //    }
+      //  ],
+      // },
       livereload: {
         options: {
           open: true,
@@ -350,6 +371,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+  
 
     htmlmin: {
       dist: {
@@ -376,7 +398,8 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: 'views/{,*/}*.html',
+        // src: 'views/{,*/}*.html',
+        src: 'views/**/*.html',
         dest: '.tmp/templateCache.js'
       }
     },
@@ -421,9 +444,14 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
         }, {
+          // expand: true,
+          // cwd: '.',
+          // src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          // dest: '<%= yeoman.dist %>'
+
           expand: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
         }]
       },
