@@ -9,6 +9,7 @@
  */
 angular.module('project1App')
   .controller('AboutCtrl', function () {
+  	
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
