@@ -63,7 +63,7 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="header-phone">
             <ul>
-              <!-- <li><img src="images/edificelogo.png" alt="service" style="width:55px;"></li> -->
+              <li><img src="images/edificelogo.png" alt="service" style="width:55px;"></li>
               <!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Toll free number 1800 102 7200</li> -->
             </ul>
           </div>
@@ -768,27 +768,28 @@
   </div>
 </div>
 
-    <div class="modal fade" id="Termspolicy" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+   
+   <div class="modal fade" id="deleteallstudents" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width:600px">
           <div class="modal-content">
-              <form>
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h3></h3>
+              </div>
+              <form name="" id="" method="post">
+                <input class="form-control" readonly="readonly" type="hidden" id="getid">
                 <div class="modal-body">
-                    <p align="center"><b>Privacy Policy</b></p>
-                    <p>Our website terms and conditions template has been designed for use on typical websites, including those with with basic interactive features.
-
-These terms and conditions include, amongst other things, a licence specifying how the website may be used, a disclaimer of liability, a statutory disclosures section and rules on user-contributed content. This document is an extended version of our website disclaimer document.
-
-The terms and conditions are insufficient for a website selling products or services. For a complete set of documents for an online </p>
+                    <p ng-if="deleteSchoolApiError" style="color:red;">{{deleteTeacherApiError}}</p>
+                    <p align="center"><b>ARE YOU SURE YOU WANT TO DELETE ALL STUDENTS FROM THIS SCHOOL?</b></p>
                 </div>
-                <div class="modal-footer">           
-                    <a class="btn btn-info" data-dismiss="modal" ng-click="closeStudentsDeletePopup()">Close</a>                
+                <div class="modal-footer">
+                      <a class="btn btn-danger" ng-click="deleteAllStudentsBySchool();">Delete</a>                
+                    <a class="btn btn-info" data-dismiss="modal">Close</a>                
                 </div>
               </form>
           </div>
-        </div>
       </div>
-</div>
-
+  </div>
 
 
 
