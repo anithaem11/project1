@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://oeoea.epfoservices.com/UANDEDUP/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <link href="./One Employee One PF_files/registerPage.css" rel="stylesheet">
+        
+        <link href="./One Employee One PF_files/bootstrap.min.css" rel="stylesheet">        
+        <script src="./One Employee One PF_files/jquery.min.js"></script>        
+        <script src="./One Employee One PF_files/bootstrap.min.js"></script>
+        
+        
+        <link rel="stylesheet" href="./One Employee One PF_files/jquery.timepicker.min.css">
+        <link rel="stylesheet" href="./One Employee One PF_files/jquery.timepicker.css">
+        <script src="./One Employee One PF_files/jquery.timepicker.js"></script>
+        <script src="./One Employee One PF_files/jquery.timepicker.min.js"></script>
+        
+        <link rel="stylesheet" href="./One Employee One PF_files/jquery-ui.css">
+        <script src="./One Employee One PF_files/jquery-1.10.2.js"></script>
+        <script src="./One Employee One PF_files/jquery-ui.js"></script>
+        
+        <script type="text/javascript" src="./One Employee One PF_files/Verhoeff.js"></script>
+        
+        <script>
+            history.forward();
+        </script>
+        
+        <script>
+            $( document ).ready(function() {
+                document.getElementById('inputOTPdiv').style.display='none';
+                document.getElementById('uanSpan').style.display='none';
+                document.getElementById('MIDSpan').style.display='none';
+                 document.getElementById('mobileMainDiv').style.display='none';
+                document.getElementById('uanMainDiv').style.display='none';
+              
+                document.getElementById('MidMainDiv').style.display='none';
+              document.getElementById('OTPdiv').style.display='none';
+            });
+           
+        </script>
+            
+        <title>One Employee One PF</title>
+    </head>
+    <body>
+        
+        
+        <div id="checkMobDiv">
+            <input type="hidden" id="hiddenChk" name="hiddenChk">          
+        </div>
+        <div id="checkUAN">
+
+
+
+
+
+
+
+
+
+    
+        
+        <title>JSP Page</title>
+    
+    
+                     
+           
+            <div id="checkUAN">
+                <input type="hidden" id="checkUANstatus" name="checkUANstatus" value="0">
+                 <input type="hidden" id="checkocode" name="checkocode" value="248">
+                  <input type="hidden" id="checkMidstatus" name="checkMidstatus" value="PYBOM00113940000229718">
+                   <input type="hidden" id="checkUAN2" name="checkUAN2" value="100940708469">
+                   <input type="hidden" id="checkMobilestatus" name="checkMobilestatus" value="8951800697">
+            </div>
+            
+    
+
+</div>
+        <div class="container">
+        <div class="col-md-1" align="center">
+            <img src="./One Employee One PF_files/logo_shadow.jpg" style="width: 100px; height: 90px">
+        </div>
+      
+        <div class="col-md-10" align="center">
+            <h3 class="epfoHeading">Employees' Provident Fund Organisation, India / कर्मचारी भविष्य निधि संगठन, भारत </h3>
+            <h4 class="epfoHeading">(Ministry of Labour &amp; Employment, Government of India) / श्रम एवं रोजगार मंत्रालय, भारत सरकार</h4> 
+        </div>
+        <div class="col-md-1" align="center">            
+        </div>
+        </div>
+        <br>
+        
+                    <div align="center" class="col-md-12"><h2 id="heading3">Facility to Consolidate Multiple PF Accounts of an Employee</h2><br></div>
+
+        
+
+       
+        <table class="mainTable" align="center">
+            <tbody><tr><td style="height: 20px;"></td></tr>
+            <tr><td>
+            <form class="form-horizontal" role="form" action="http://oeoea.epfoservices.com/UANDEDUP/newRegistration" method="post">                
+                <div class="container">
+               <div class="form-group" id="mobileMainDiv">
+                  <div class="col-md-1"></div>
+                  <label id="heading2" class="col-md-4">Mobile / मोबाइल<span style="color:red">*</span>  (Registered at UAN Portal)</label>
+                  <div class="col-md-7">
+                          <input type="text" class="testboxSlot" id="mobile" name="mobile" value="" maxlength="10" placeholder="Registered Mobile Number...">                  
+              
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uanmembers.epfoservices.in/uan_reg_form.php" target="_blank"><u>Click Here to Activate Your UAN</u></a>
+  </div>
+                  <div style="font-size: smaller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                </div>
+                <div class="form-group" id="uanMainDiv">
+                  <div class="col-md-1"></div>
+                  <label id="heading2" class="col-md-4">UAN / यू ए एन <span style="color:red">*</span></label>
+                  <div class="col-md-7">                      
+                      <input type="text" maxlength="12" class="testboxSlot" id="uan" value="" name="uan" placeholder="Enter 12 digit UAN here..."> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uanmembers.epfoservices.in/check_uan_status.php" target="_blank"><u>Click Here to Know Your UAN</u></a>
+
+                  </div>
+                </div>
+                 
+                <div class="form-group">
+                  <div class="col-md-1"></div>
+                  <label id="heading2" class="col-md-3"></label>
+                  <div class="col-md-5" align="center">
+                      <span id="UANmsg" class="text-danger">Invalid Credantials </span>
+                  </div>
+                </div>
+                    
+                <div id="checkUAN">                    
+                </div>
+                <div id="UANmidDiv">  
+                </div>
+                    
+                 <div class="form-group" id="MidMainDiv">
+                  <div class="col-md-1"></div>
+                  <label id="heading2" class="col-md-4">Current Member ID / वर्तमान सदस्य आईडी<span id="MIDSpan" style="color:red">*</span>   <div style="font-size:smaller ">(UAN Linked)</div></label>
+               
+                  <div class="col-md-7">                      
+                     <select class="textboxSmall" name="accOffID" id="accOffID" onchange="setAccOffID();">
+                         <option value="NIL">--Office--</option>
+                       <option value="NEAGT-341">AGARTALA</option>
+<option value="MRAGR-431">AGRA</option>
+<option value="GJAHD-180">AHMEDABAD</option>
+<option value="NGAKL-320">AKOLA</option>
+<option value="UPALD-482">ALLAHABAD</option>
+<option value="TNAMB-417">AMBATTUR</option>
+<option value="LDASR-381">AMRITSAR</option>
+<option value="NGAUR-311">AURANGABAD</option>
+<option value="MHBAN-310">BANDRA(MUMBAI-I)</option>
+<option value="BGBNG-240">BANGALORE</option>
+<option value="UPBLY-432">BAREILLY</option>
+<option value="WBTLO-471">BARRACKPORE(TITAGARH)</option>
+<option value="GBBLR-245">BELLARY</option>
+<option value="ORBAM-362">BERHAMPUR</option>
+<option value="BRBHA-141">BHAGALPUR</option>
+<option value="SRBRH-187">BHARUCH</option>
+<option value="PBBTI-382">BHATINDA</option>
+<option value="MPBPL-291">BHOPAL</option>
+<option value="ORBBS-360">BHUBANESWAR</option>
+<option value="PYBOM-248">BOMMASANDRA</option>
+<option value="PBCHD-380">CHANDIGARH</option>
+<option value="TNMAS-410">CHENNAI</option>
+<option value="KNCKR-246">CHIKAMAGALUR</option>
+<option value="CBCBE-411">COIMBATORE</option>
+<option value="JLDRJ-473">DARJEELING</option>
+<option value="UKDDN-460">DEHRADUN</option>
+<option value="DLCPM-101">DELHI (NORTH)</option>
+<option value="DSNHP-105">DELHI (SOUTH)</option>
+<option value="WBDGP-474">DURGAPUR</option>
+<option value="HRFBD-200">FARIDABAD</option>
+<option value="GAGOA-170">GOA</option>
+<option value="UPGKP-433">GORAKHPUR</option>
+<option value="GBGLB-241">GULBARGA</option>
+<option value="GRGNT-122">GUNTUR</option>
+<option value="GNGGN-203">GURGAON</option>
+<option value="NEGHY-340">GUWAHATI</option>
+<option value="MPGWL-294">GWALIOR</option>
+<option value="UKHLD-461">HALDWANI</option>
+<option value="WBHLO-472">HOWRAH</option>
+<option value="GBHBL-242">HUBLI</option>
+<option value="APHYD-120">HYDERABAD</option>
+<option value="MPIND-290">INDORE</option>
+<option value="MPJBP-292">JABALPUR</option>
+<option value="RJRAJ-400">JAIPUR</option>
+<option value="LDJAL-384">JALANDHAR</option>
+<option value="JLJLP-475">JALPAIGURI</option>
+<option value="JHJAM-231">JAMSHEDPUR</option>
+<option value="JLJNG-480">JANGIPUR</option>
+<option value="RJJOD-401">JODHPUR</option>
+<option value="PYKRP-249">K R PURAM (WHITEFIELD)</option>
+<option value="GRCDP-121">KADAPA</option>
+<option value="KRKNR-272">KANNUR</option>
+<option value="UPKNP-430">KANPUR</option>
+<option value="NZKRN-129">KARIMNAGAR</option>
+<option value="HRKNL-201">KARNAL</option>
+<option value="ORKJR-363">KEONJHAR</option>
+<option value="KRKCH-273">KOCHI (COCHIN)</option>
+<option value="PUKOL-312">KOLHAPUR</option>
+<option value="WBCAL-470">KOLKATA</option>
+<option value="KRKLM-275">KOLLAM</option>
+<option value="RJKOT-402">KOTA</option>
+<option value="KRKTM-274">KOTTAYAM</option>
+<option value="KRKKD-271">KOZHIKODE (CALICUT)</option>
+<option value="APKKP-128">KUKATPALLI</option>
+<option value="DSSHD-104">LAXMI NAGAR</option>
+<option value="UPLKO-434">LUCKNOW</option>
+<option value="LDLDH-383">LUDHIANA</option>
+<option value="MDMDU-412">MADURAI</option>
+<option value="KDMAL-317">MALAD (KANDIVALI)</option>
+<option value="KNMLR-243">MANGALORE</option>
+<option value="MRMRT-435">MEERUT</option>
+<option value="BRMUZ-142">MUZAFFARPUR</option>
+<option value="KNMYS-244">MYSORE</option>
+<option value="BGMRD-483">MYSORE ROAD</option>
+<option value="MDNKL-421">NAGERCOIL</option>
+<option value="NGNAG-313">NAGPUR</option>
+<option value="GJNRD-185">NARODA</option>
+<option value="KDNSK-314">NASIK</option>
+<option value="NZNZB-123">NIZAMABAD</option>
+<option value="MRNOI-437">NOIDA</option>
+<option value="WBPRB-478">PARK STREET</option>
+<option value="APPTC-127">PATANCHERU</option>
+<option value="BRPAT-140">PATNA</option>
+<option value="PYPNY-247">PEENYA</option>
+<option value="TBPDY-420">PONDICHERRY</option>
+<option value="WBAND-476">PORT BLAIR</option>
+<option value="PUPUN-315">PUNE</option>
+<option value="GBRCH-250">RAICHUR</option>
+<option value="CGRAI-160">RAIPUR (CHATTISGARH)</option>
+<option value="GRRJY-126">RAJAMUNDRY</option>
+<option value="GJRAJ-183">RAJKOT</option>
+<option value="JHRAN-230">RANCHI</option>
+<option value="GNRTK-202">ROHTAK</option>
+<option value="ORRKL-361">ROURKELA</option>
+<option value="MPSGR-481">SAGAR</option>
+<option value="CBSLM-413">SALEM</option>
+<option value="NESHG-342">SHILLONG</option>
+<option value="HPSML-220">SHIMLA</option>
+<option value="KNSHG-251">SHIMOGA</option>
+<option value="APSID-130">SIDDIPET</option>
+<option value="JLSLG-477">SILIGURI</option>
+<option value="PUSLP-316">SOLHAPUR</option>
+<option value="SRSRT-181">SURAT</option>
+<option value="TBTAM-418">TAMBARAM</option>
+<option value="THTHA-318">THANE (MUMBAI-II)</option>
+<option value="KRTVM-270">THIRUVANANTHAPURAM(TRIVENDRUM)</option>
+<option value="NETSK-343">TINSUKIA</option>
+<option value="MDTNY-414">TIRUNELVELI</option>
+<option value="CBTRY-415">TRICHY</option>
+<option value="RJUDR-403">UDAIPUR</option>
+<option value="KNUDP-252">UDUPPI</option>
+<option value="MPUJJ-293">UJJAIN</option>
+<option value="VDBRD-182">VADODARA</option>
+<option value="SRVAP-184">VAPI</option>
+<option value="UPVNS-436">VARANASI</option>
+<option value="THVSH-319">VASHI</option>
+<option value="GJVAT-186">VATWA</option>
+<option value="TBVLR-416">VELLORE</option>
+<option value="GRVSP-124">VISHAKAPATNAM</option>
+<option value="NZWGL-125">WARANGAL</option>
+                      </select>
+                      <input class="textboxSmall" maxlength="7" type="text" id="estId" name="estId" placeholder="Est ID..." value="" onblur="setEstID();">
+                      <input class="textboxSmall" maxlength="3" type="text" id="estExtn" name="estExtn" placeholder="Ext. if any..." value="" onblur="setEstextn();">
+                      <input class="textboxSmall" maxlength="7" type="text" id="memberId" name="memberId" placeholder="Member ID..." onblur="setmemID();">
+                  </div>
+                  <br>    <div style="font-size: smaller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+                </div>
+                <div class="form-group">
+                  <div class="col-md-2"></div>
+                  <label id="heading2" class="col-md-2"></label>
+                  <div class="col-md-5" align="center">
+                        <span id="span1"></span>
+                        <span id="span2">PYBOM</span>
+                        <span id="span3">0011394</span>
+                        <span id="span4">000</span>
+                        <span id="span5">0229718</span>
+                  </div>
+                </div>
+                      
+                      
+             
+               
+          
+                <div class="form-group" align="center" name="OTPdiv" id="OTPdiv">
+                    <div class="col-md-2"></div>
+                  <div class="col-sm-offset-1 col-md-6">
+                      <button type="button" class="btn btn-danger" value="getOTP" onclick="return checkUANavailability(1);">Generate OTP / पिन प्राप्त करें</button>
+                  </div>
+                </div>
+
+                <div class="form-group" name="inputOTPdiv" id="inputOTPdiv" style="display: none;">
+                   <div class="col-md-2"></div>
+                   <label id="heading2" class="col-md-2">Enter OTP / ओ टी पी </label>
+                  <div class="col-md-8">                      
+                      <input type="text" class="testboxOTP" id="otp" name="otp" placeholder="Enter OTP...">
+                      <button type="button" class="btn btn-danger btn-sm" value="verify" onclick="return showSubmit();">Verify OTP / पिन सत्यापित करें</button>
+                      <a href="http://oeoea.epfoservices.com/UANDEDUP/#" onclick="return checkUANavailability(1);">Resend</a>
+                  </div>
+                </div>   
+                    <br>  <br>  <div style="font-size: small; color: blue;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;This facility can be availed only after 03 days of UAN activation.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;For any query call at Toll Free Number / टोल फ्री नंबर : 18001-18005 or Register at : <a href="http://59.180.231.60:9091/UANHD/" target="_blank"><u>UAN Helpdesk</u></a></b></div>
+
+                <br><div class="form-group" name="OTPmsgDiv" id="OTPmsgDiv">
+                    <span class="danger text-primary" name="OTPmsg" id="OTPmsg"></span>  
+                    <input type="hidden" id="otpStatus" name="otpStatus">
+                </div>
+
+ 
+                </div>
+            </form>
+                </td></tr></tbody></table>
+        <br><br>
+            
+          
+            <script>
+              
+                function showSubmit()
+                {
+                    return validatePin();                    
+                }
+                
+                
+                function getXMLHTTP() { //fuction to return the xml http object
+                var xmlhttp = false;
+                try {
+                    xmlhttp = new XMLHttpRequest();
+                } catch (e) {
+                    try {
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e) {
+                        try {
+                            xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+                        }
+                        catch (e1) {
+                            xmlhttp = false;
+                        }
+                    }
+                }
+                return xmlhttp;
+                }
+                
+                
+                function sendOTP()
+                {
+//                    alert("SEND OTP");
+                    var mobile=document.getElementById('checkMobilestatus').value;
+                    var uan=document.getElementById('checkUAN2').value;
+//                    alert("UAN IS :"+uan);
+                    var oCode=document.getElementById('checkocode').value;
+                   var mem_id=document.getElementById("checkMidstatus").value; 
+                    var strURL = "/UANDEDUP/jsp/getUANHDpin.jsp?uan=" +uan+"&mobile="+mobile+"&memberId="+mem_id+"&office_id="+oCode;
+                    var req = getXMLHTTP();
+                    if (req) {
+                        req.onreadystatechange = function() {
+                            if (req.readyState == 4) {
+                                if (req.status == 200) {
+                                    document.getElementById('checkMobDiv').innerHTML = req.responseText;                                    
+                                    return showAlert('original');
+                                } else {
+
+                                    alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+                                }
+                                return false;
+                            }
+                        }
+                        req.open("GET", strURL, true);
+                        req.send(null);
+                    }
+                    //return false;
+                }
+                
+                
+            
+                function showAlert(type)
+                {
+                    if(document.getElementById("hiddenChk").value==='wrong'){alert('Some problem in sending OTP. Please try again.'); return false;}
+                            else
+                            { //alert("TYPE : "+type);
+                                document.getElementById('inputOTPdiv').style.display='';
+                                document.getElementById('inputOTPdiv').focus();
+                                document.getElementById('OTPdiv').style.display='none';
+//                                document.getElementById('duplicateOTPdiv').style.display='';
+                                alert("Pin has been sent to your registered Mobile Number.");
+                            }
+                }
+                
+                
+                function validatePin()
+                {
+                    var pin=document.getElementById("otp").value;
+                    var mobile=document.getElementById('checkMobilestatus').value;
+                    var uan=document.getElementById('checkUAN2').value;
+                    var oCode=document.getElementById('checkocode').value;
+                   var mem_id=document.getElementById("checkMidstatus").value; 
+                    var strURL = "/UANDEDUP/jsp/validatePin.jsp?uan=" + uan+"&mobile="+mobile+"&memberId="+mem_id+"&office_id="+oCode+"&providedOTP="+pin;
+
+                    var req = getXMLHTTP();
+                    if (req) {
+                        req.onreadystatechange = function() 
+                        {
+                            if (req.readyState == 4) {                                
+                                if (req.status == 200) {                                    
+                                    document.getElementById('OTPmsgDiv').innerHTML = req.responseText;
+                                    return setMessage();
+                                } else { alert("There was a problem while using XMLHTTP:\n" + req.statusText); return false;}
+                            }else{return false;}
+                        }
+                        req.open("GET", strURL, true);
+                        req.send(null);
+                    }  else{return false;}                  
+                }
+                
+                function setMessage()
+                {
+//                    alert('yu 1111111');
+                     if(document.getElementById("otpStatus").value==='wrong')
+                        {
+                            alert('You have entered wrong pin. please try again.');
+                            return false;}
+                        else
+                        {
+                            
+//                           alert('You have entered correct pin.');
+                            document.getElementById('inputOTPdiv').style.display='none';
+                            document.getElementById('OTPdiv').style.display='none';
+//                            document.getElementById('verDiv').style.display='';
+//                            document.getElementById('duplicateOTPdiv').style.display='none';
+//                            alert("PPPPPPPPPPPp");
+                            return showMember();
+                        }
+                   
+                }
+                
+               
+                function checkUANavailability(id)
+                {
+                    if(id==1)
+                    { 
+                     
+                    var uan=document.getElementById("uan").value;   
+                    var accOffID=document.getElementById("accOffID").value; 
+                    var estId=document.getElementById("estId").value; 
+                    var estExtn=document.getElementById("estExtn").value; 
+                    var memberId=document.getElementById("memberId").value; 
+                    var mobile=document.getElementById("mobile").value;
+                     var oCode= accOffID.substring(6,9);
+//                     alert(oCode);
+                    var UANpattern = /^\d{12}$/;
+                    var MobilePattern = /^\d{10}$/; 
+              
+                    if(mobile=='')
+                    { alert('Please enter Mobile number.'); return false; }
+                      else if(mobile.length!=10 )
+                    { alert('Invalid Mobile number.'); return false; }
+                    else if (isNaN(mobile) || mobile.indexOf(" ") != -1)
+                        {
+                            alert("Enter numeric value in Mobile No.")
+                            return false;
+                        }
+                     else if(!(mobile.charAt(0) == "9" || mobile.charAt(0) == "8" || mobile.charAt(0) == "7"))
+                     {
+                            alert("Mobile No. should start with 7, 8 or 9");
+                            return false;
+                        }
+                        else{
+                        }
+                    
+                    
+                        var strVal = uan;
+			if (strVal.length < 12) // Minimum length.
+				{alert('Invalid UAN No. should be 12 digit');
+                                    //document.getElementById('uan').focus();
+				return false;}
+                           else if (isNaN(strVal) || strVal.indexOf(" ") != -1)
+                        {
+                            alert("Enter numeric value in UAN No.")
+                            return false;
+                        }
+			 else if (strVal.verhoeffCheck()==false)
+			{
+			alert('Enter correct UAN');
+                        //document.getElementById('uan').focus();
+			return false;
+			}
+			else
+			{};
+                    }
+                    
+                    //alert('check unavalibility of UAN');
+                    
+                       var midPattern=/^[0-9]+$/;
+                       if(accOffID=='NIL')
+                        {alert('Invalid MemberID. Please select PF Office.'); return false;}
+                        else if(estId=='' || !(estId.match(midPattern)))
+                        {alert('Invalid MemberID. Please Enter valid Establishment ID.'); return false;}
+                        else if(memberId=='' || !(memberId.match(midPattern)))
+                        {alert('Invalid MemberID. Please Enter valid Member ID.'); return false;} 
+                    
+//                    alert('hi');
+                    
+//                    alert('hiiii');
+                    document.getElementById("UANmsg").innerHTML = "<img src='images/loading_animation_square.gif'>";                    
+//                    alert('hiiii you');
+                    if(uan=='' || mobile=='') return false;
+                    var a0= accOffID.substring(0,5);
+                    var mystr = document.getElementById('estId').value; 
+                            var pad = '0000000'
+                            var str='';
+                            if(mystr.length<=7){
+                             str=(pad + mystr).slice(-pad.length)}
+                    var a1=str;
+                    var mystr1 = document.getElementById('estExtn').value; 
+                            var pad1 = '000'
+                            var str1='';
+                            if(mystr1.length<=3){
+                             str1=(pad1 + mystr1).slice(-pad1.length)}
+                    var a2=str1;
+                      var mystr2 = document.getElementById('memberId').value; 
+                            var pad2 = '0000000'
+                            var str2='';
+                            if(mystr2.length<=7){
+                             str2=(pad2 + mystr2).slice(-pad2.length)}
+                    var a3=str2;
+                    var mem_id=a0+a1+a2+a3;
+                    
+                    var strURL = "/UANDEDUP/jsp/checkUANavailable.jsp?uan=" + uan+"&mobile="+mobile+"&memberId="+mem_id+"&office_id="+oCode;
+                    var req = getXMLHTTP();
+                    if (req) {
+//                        alert('id');
+                        req.onreadystatechange = function() 
+                        {
+                            if (req.readyState == 4) {                                
+                                if (req.status == 200) {
+                                         document.getElementById('checkUAN').innerHTML = req.responseText;
+//                                         alert('id');
+                                    if(document.getElementById('checkUANstatus').value=='0')
+                                    { //alert('Mobile Number mismatch. Kindly enter same mobile number which is used for UAN activation.');
+                                      document.getElementById('UANmsg').innerHTML='Invalid Credantials ';
+                                      //document.getElementById('mobile').focus();
+                                        return false;}
+//                                
+                                    else if(document.getElementById('checkUANstatus').value=='1')
+                                    {
+//                                        alert("INSIDE else")
+                                     sendOTP();
+                                        document.getElementById('UANmsg').innerHTML="";
+                                         document.getElementById('OTPdiv').style.display='none';
+                                        
+                                        document.getElementById("mobile").readOnly = true;
+                                        document.getElementById("uan").readOnly = true;
+                                        document.getElementById("estId").readOnly = true;
+                                        document.getElementById("estExtn").readOnly = true;
+                                        document.getElementById("memberId").readOnly = true;
+                                    } 
+                                     
+                                     
+                                } else { alert("There was a problem while using XMLHTTP:\n" + req.statusText); return false;}
+                            }else{return false;}
+                        }
+                        req.open("GET", strURL, true);
+                        req.send(null);
+                    }  else{return false;}  
+                }
+                
+                
+              
+                 
+                function setAccOffID()
+                {
+                    document.getElementById('estId').value='';
+                    document.getElementById('estExtn').value='';
+                    document.getElementById('memberId').value='';
+                    setMIDspan();
+                }
+                function setEstID()
+                {               
+                   setMIDspan();
+                }
+                function setEstextn()
+                {
+                   setMIDspan();
+                }
+                function setmemID()
+                {               
+                   setMIDspan();
+                }
+               
+             
+              
+            
+                function setMIDspan()
+                {
+//                    document.getElementById('span1').innerHTML=document.getElementById('region').value;
+                    var offId= document.getElementById('span2').innerHTML=document.getElementById('accOffID').value.substring(0,5);
+                    // alert(offId);
+                    if(document.getElementById('span3').innerHTML==''){
+                        document.getElementById('span3').innerHTML="0000000";}
+                    else
+                        {   var mystr = document.getElementById('estId').value; 
+                            var pad = '0000000'
+                            var str='';
+                            if(mystr.length<=7){
+                             str=(pad + mystr).slice(-pad.length)
+                         var a=document.getElementById('span3').innerHTML=str;}}
+
+                    if(document.getElementById('span4').innerHTML=='')
+                       {document.getElementById('span4').innerHTML="000";}
+                    else
+                        {   var mystr = document.getElementById('estExtn').value; 
+                            var pad = '000'
+                            var str='';
+                            if(mystr.length<=3){
+                             str=(pad + mystr).slice(-pad.length)
+                      var b=      document.getElementById('span4').innerHTML=str;}
+                        }
+
+                    if(document.getElementById('span5').innerHTML=='')
+                       { document.getElementById('span5').innerHTML="0000000";}
+                    else
+                        {   var mystr = document.getElementById('memberId').value; 
+                            var pad = '0000000'
+                            var str='';
+                            if(mystr.length<=7){
+                             str=(pad + mystr).slice(-pad.length)
+                       var c=     document.getElementById('span5').innerHTML=str;}}
+               
+                }
+            function showMember(){
+//               alert("INSDIDE  ME");
+                    var pin=document.getElementById("otp").value;
+                    var mobile=document.getElementById('checkMobilestatus').value;
+                    var uan=document.getElementById('checkUAN2').value;
+                    var oCode=document.getElementById('checkocode').value;
+                   var mem_id=document.getElementById("checkMidstatus").value; 
+                 window.location = "/UANDEDUP/jsp/showMemberId.jsp?uan=" + uan+"&memberId="+mem_id+"&office_id="+oCode;
+    
+            }
+                
+            </script>  
+         
+    
+
+</body></html>

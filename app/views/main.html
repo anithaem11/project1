@@ -10,7 +10,7 @@
     <div class="white-text text-right" ng-click="openAdminLogin()">Admin Login</div>
   </div>
   <div class="margin-100-top">
-    <img src="images/xseed_logo.png" width="75">
+    <!-- <img src="images/xseed_logo.png" width="75"> -->
     <h1 class="white-text">SCHOOL</h1>
     <section id="content" class="dx-login-content">
       <div class="dx-login-form">
@@ -23,8 +23,8 @@
             <input type="password" ng-model="logindataschool.password" placeholder="Password" required="" id="password" />
           </div>
           <!-- <div> -->
-            <img src="images/animated.gif" ng-if="loginFromSchoolAppInProgress" class="submit-loaderschool">  
-            <button class="login-submit" ng-click="loginFromSchoolApp($event,logindataschool)" ng-disabled="loginFromSchoolAppInProgress">Log In</button>
+          <!--   <img src="images/animated.gif" ng-if="loginFromSchoolAppInProgress" class="submit-loaderschool">  
+            <button class="login-submit" ng-click="loginFromSchoolApp($event,logindataschool)" ng-disabled="loginFromSchoolAppInProgress">Log In</button> -->
           <!-- </div> -->
         </form><!-- form -->
       </div>
@@ -41,10 +41,10 @@
       <!-- <form name="loginform" ng-submit="loginFromAdmin(logindata)"> -->
         <input type="text" name="email" placeholder="Email" ng-model="logindata.email" placeholder="Username">
         <input type="password" name="password" placeholder="Password" ng-model="logindata.password" >
-        <div class="sign-in-group">
+       <!--  <div class="sign-in-group">
           <img class="submit-loader" ng-if="loginFromAdminAppInProgress" src="images/animated.gif" >  
           <input type="submit" id="login-btn" class="login loginmodal-submit" value="Sign In" ng-disabled="loginFromAdminAppInProgress">
-        </div>
+        </div> -->
       <!-- </form> -->
      <!--  <div class="login-help">
         <a href="#">Forgot Password</a>
@@ -63,7 +63,7 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="header-phone">
             <ul>
-              <li><img src="images/edificelogo.png" alt="service" style="width:55px;"></li>
+              <!-- <li><img src="images/edificelogo.png" alt="service" style="width:55px;"></li> -->
               <!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Toll free number 1800 102 7200</li> -->
             </ul>
           </div>
@@ -72,8 +72,8 @@
           <div class="header-address">
              <ul style="padding-top: 24px;">
               <li class="active"><a href="#/" class="header-font-family">HOME</a></li>
-              <li><a ng-href="#/about" class="header-font-family">SERVICES</a></li>
-               <li><a ng-href="#/about" class="header-font-family">GALLERY</a></li>
+              <li><a ng-href="#/about" class="header-font-family" ng-click="goToDevPage()">SERVICES</a></li>
+               <li><a ng-href="#/" class="header-font-family">GALLERY</a></li>
               <li><a ng-href="#/" class="header-font-family">ABOUT US</a></li>
               <li><a ng-href="#/" class="header-font-family">CONTACT US</a></li>
             </ul>
@@ -114,11 +114,16 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox" style="margin-top: 56px;">
       <div class="item active">
+        <img src="images/homeimages/slideN3.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
+      </div>
+
+      <div class="item">
         <img src="images/homeimages/slide1.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
       </div>
 
@@ -127,11 +132,11 @@
       </div>
     
       <div class="item">
-        <img src="images/homeimages/slideN3.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
+        <img src="images/homeimages/slideN4.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
       </div>
 
-      <div class="item">
-        <img src="images/homeimages/slideN4.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
+       <div class="item">
+        <img src="images/homeimages/slide5.jpg" alt="Chania" width="100%" height="150" style="height:590px;">
       </div>
     </div>
 
@@ -212,8 +217,8 @@
         <div class="single-service">
           <div class="service-media"> <a href="#"><img src="images/login/service2.jpg" alt="service"></a> </div>
           <div class="service-content">
-            <h3><a href="#">Plug and Play Configuration </a></h3>
-            <p>Plug the device to your existing computer in your AV Room or to the LAN network using an ethernet cable and you are ready to start your first lesson. </p>
+            <h3><a>Our Aim</a></h3>
+            <p>Edifice is a fast growing company committed to delivering the best Design, Build and Management to our customers in the field of Exhibitions, Interior and Office Furniture Fitouts. Our meticulously planned approach towards every project ensures that we are constantly delivering excellent quality within agreed deadlines and the budgetary specifications of the customer.</p>
           </div>
         </div>
       </div>
@@ -221,8 +226,8 @@
         <div class="single-service">
           <div class="service-media"> <a href="#"><img src="images/login/service1.jpg" alt="service"></a> </div>
           <div class="service-content">
-            <h3><a href="#">Zero Training Cost </a></h3>
-            <p>Save on hours of training cost on traditional digital solutions in classrooms. 5 minutes is all you need to get going with Minicampus </p>
+            <h3><a>Mission</a></h3>
+            <p>We take pride in the fact that each of our projects adds value to our customer’s products by the positive exposure we create. Every project is undertaken with the aim of making our client’s products and services gain maximum exposure with our creative designs. We strive to leave a long lasting impact on the end user while ensuring efficient management practices eliminate the stress for our customer during the project build.</p>
           </div>
         </div>
       </div>
@@ -230,8 +235,8 @@
         <div class="single-service">
           <div class="service-media"> <a href="#"><img src="images/login/service3.jpg" alt="service"></a> </div>
           <div class="service-content">
-            <h3><a href="#">Peace of Mind</a></h3>
-            <p>XSEED Minicampus is 100% mapped to the XSEED Curriculum and you don’t need to spend a minute extra in going through that huge pile of video repository to know what's relevant. </p>
+            <h3><a>Standards</a></h3>
+            <p>Today, Edifice has successfully executed large projects covering more than 1300 square meters at single shows; High end stands for prestigious brands like Aston Martin and highly customized stands for Jewellery and high net worth products. Our range of experience covers automobile, real estate, jewellery, security products, defense, interior fittings, food and communication industries including cable and satellite</p>
           </div>
         </div>
       </div>
@@ -242,18 +247,18 @@
   <div class="recent-case-two-style padding-top-bottom"  style="background-color:#243A72">
     <div class="containercustom animated slideInLeft ">
       <div class="row">
-        <div class="col-md-5"> <span class="figure-image"> <img src="images/login/dx-module.png"></span></div>
-        <div class="col-md-7" align="left"><i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> XSEED Minicampus is the real way for technology to become an integral part of learning in the classroom. Minicampus relies on learning outcomes rather than just being another screen on the wall.<br>
+        <div class="col-md-5"> <span class="figure-image"> <img src="images/homeimages/school11.png"></span></div>
+        <div class="col-md-7" align="left"><i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i>We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
           <br>
-          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> Minicampus is a digital learning solution that can easily be installed in any classroom or network interface of your school and gets you going on day 1. <br>
+          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
           <br>
-          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> XSEED DX is a system that provides a weekly digital stimulus to children with regular feedback on how to improve performance. It’s about what works in classrooms across the globe and not about expensive hardware for your school.<br>
+          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i>We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
           <br>
-          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> XSEED DX is a sure shot way for staying in touch with your child’s skill development and helping them get better, one session at a time. Forget the never-ending online and classroom tests that try to judge your students on the ability to memorize. It is about 1 Monthly XSEED Report that looks at your student’s development on 21st century skills and applied thinking.<br>
+          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i>We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
           <br>
-          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> XSEED DX is not about watching a video. It is an activity based XSEED 5-Step class, powered by real education technology.<br>
+          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i>We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
           <br>
-          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i> XSEED DX complements the XSEED Schools Program and comes integrated with the syllabus. The solution is designed to run once in a week to make it easy for the teacher.<br>
+          <i class="fa fa-check-circle" aria-hidden="true" style="color:#bb141a"></i>We look forward to bringing our experience and professionalism to make your next project a Huge Success<br>
         </div>
       </div>
     </div>
@@ -265,18 +270,15 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="marketing-needs">
-            <h2><span>What do you get ?</span></h2>
+            <h2><span>Our Services</span></h2>
             <ul>
-              <li>XSEED Minicampus Wi-fi Server</li>
-              <li>XSEED Minicampus 5-Step Modules for the entire year </li>
-              <li>XSEED Minicampus Journal for every child </li>
-              <li>XSEED Parent App for Parents to build </li>
-              <li>School Admin ID </li>
+              <li>EDIFICE Exhibition Service</li>
+              <li>EDIFICE School Interiors</li>
             </ul>
-            <a class="ghost-btn" href="#" data-toggle="modal" data-target="#myModal">Get In Touch </a> </div>
+            <a class="ghost-btn" data-target="#myModal">Get In Touch </a> </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <div class="gharp"> <img src="images/login/gharp2.jpg" alt="chart"> </div>
+          <div class=""> <img src="images/homeimages/schoolnew.jpg" alt=""> </div>
         </div>
       </div>
     </div>
@@ -474,10 +476,10 @@
       <div class="row">
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
           <div class="title">
-            <h3>About XSEED Foundation</h3>
+            <h3>About EDIFICE</h3>
           </div>
           <div class="our-service">
-            <p>XSEED is a proven research-based academic program for schools that builds thinking skills & problem solving confidence in children. XSEED children ask more questions, can write in their own words, like solving word problems in mathematics, can complete their homework on their own, are not afraid to speak up in English, persist longer in solving problems, and score well on tests.<br>
+            <p>Today, Edifice has successfully executed large projects covering more than 1300 square meters at single shows; High end stands for prestigious brands like Aston Martin and highly customized stands for Jewellery and high net worth products. Our range of experience covers automobile, real estate, jewellery, security products, defense, interior fittings, food and communication industries including cable and satellite.<br>
             </p>
           </div>
         </div>
@@ -488,10 +490,10 @@
           </div>
           <div class="popular-post">
             <ul>
-              <li> <a href="http://xseededucation.com/">Home</a> </li>
-              <li><a href="http://xseededucation.com/about-us/">About Us</a> </li>
-              <li><a href="http://xseededucation.com/careers-at-xseed/">Careers</a> </li>
-              <li><a href="http://xseededucation.com/category/news-events/">News & Eents</a> </li>
+              <li> <a href="">Home</a> </li>
+              <li><a href="">About Us</a> </li>
+              <li><a href="">Careers</a> </li>
+              <li><a href="">News & Eents</a> </li>
             </ul>
           </div>
         </div>
@@ -512,12 +514,12 @@
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="social-media">
             <ul>
-              <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.xseededucation.com&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Freturn%2Fclose%3Ferror_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%23_%3D_&display=popup&locale=en_GB" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.xseededucation.com&text=XSeed%20Education" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="https://plus.google.com/up/?continue=https://plus.google.com/share?url%3Dhttps://www.xseededucation.com&type=st&client=3" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/xseededucation" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
-              <li><a href="https://www.youtube.com/user/xseedidiscoveri" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
-              <li><a href="mailto:?subject=XSeed%20Education&body=https%3A%2F%2Fwww.xseededucation.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+              <li><a href="" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+              <li><a href="" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
@@ -537,64 +539,12 @@
         <p align="center" style="color:white;font-size:17pt">Pre-bookings are open for XSEED Minicampus in limited numbers for Academic Year 2017-18. Fill details below for an XSEED representative can get in touch with you. </p>
       </div>
       <div class="modal-body">
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">Name</label>
-          <div class="col-md-8 col-sm-8">
-            <input id="inputTextHidden" name="inputTextHidden" type="text" maxlength="255" placeholder="Enter your Name" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" >
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <div class="clearfix">&nbsp;</div>
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">Email</label>
-          <div class="col-md-8 col-sm-8">
-            <input id="inputTextHidden" name="inputTextHidden" type="text" maxlength="255" placeholder="Enter your Email Id" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" >
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <div class="clearfix">&nbsp;</div>
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">Phone No.</label>
-          <div class="col-md-8 col-sm-8">
-            <input id="inputTextHidden" name="inputTextHidden" type="text" maxlength="255" placeholder="Enter your Phone No" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" >
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <div class="clearfix">&nbsp;</div>
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">Country</label>
-          <div class="col-md-8 col-sm-8">
-            <select class="form-control" id="sel1">
-              <option>Select Country</option>
-              <option>USA</option>
-              <option>UK</option>
-              <option>India</option>
-            </select>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <div class="clearfix">&nbsp;</div>
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">City</label>
-          <div class="col-md-8 col-sm-8">
-            <input id="inputTextHidden" name="inputTextHidden" type="text" maxlength="255" placeholder="Enter your City" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" >
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <div class="clearfix">&nbsp;</div>
-        <div class="form-group" style="margin-top:4%">
-          <label for="contactemail" class="col-sm-3 control-label">Messages</label>
-          <div class="col-md-8 col-sm-8">
-            <textarea class="form-control" rows="3" id="comment"></textarea>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
       </div>
       <div class="clearfix">&nbsp;</div>
       <div class="clearfix">&nbsp;</div>
       <div class="modal-footer">
         <div class="col-md-12 col-sm-12" align="right">
-          <button type="submit" id="main_submit" name="main_submit" onclick="return validateQuickBooking();" class="btn btn-success login">Submit</button>
+          <button type="submit" id="main_submit" name="main_submit" onclick="" class="btn btn-success login">Submit</button>
         </div>
       </div>
       <div class="clearfix">&nbsp;</div>

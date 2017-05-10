@@ -1,0 +1,105 @@
+/* 
+    Document   : registerPage
+    Created on : Jul 20, 2015, 3:49:17 PM
+    Author     : acer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+#heading1
+{    
+    font-family: Harrington; 
+    font-weight: bolder; 
+}
+#heading2
+{  
+    font-family: verdana; 
+    font-weight: bolder;
+}
+#heading3
+{  
+    font-family: Alighieri; 
+    font-weight: bold;
+    color: #245269;
+}
+.textboxSmall
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 15%;
+    background-color:#c9e2b3;
+}
+.textboxMedium
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 90%;
+    background-color: #a6e1ec;
+}
+.testboxLarge
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 80%;
+    background-color: #c9e2b3;
+}
+.testboxSlot
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 33%;
+    background-color: #c9e2b3;
+}
+.testboxOTP
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 60%;
+    background-color: #ebe6e6;
+}
+.testboxESTID
+{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 26%;
+    background-color: #c9e2b3;
+}
+.maindiv
+{
+    margin: auto;    
+    padding: 5px;
+    border: 0.5px solid #000;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+.mainTable
+{
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px ;
+    box-shadow: 20px 20px 10px 1px #999;
+    color: black;
+    background-color: lightyellow;
+/*    BORDER-LEFT: #999 thin solid;
+    border-right: #999 thin solid;
+    BORDER-top: #999 thin solid;
+    BORDER-bottom: #999 thin solid;*/
+/*    border: 2px solid #8AC007;*/
+
+}
+.epfoHeading
+{
+    color: maroon;
+    font-weight: bolder;
+}
+
